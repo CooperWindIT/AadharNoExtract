@@ -14,4 +14,4 @@ Werkzeug==3.0.1
 Pillow==10.3.0
 gunicorn
 python-dotenv==1.0.1
-
+waitress==2.1.2
