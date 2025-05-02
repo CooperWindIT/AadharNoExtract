@@ -6,11 +6,12 @@ from PIL import Image
 import time
 from waitress import serve
 import os
+from flask_cors import CORS
 from dotenv import load_dotenv
 load_dotenv()
 
 app = Flask(__name__)
-
+CORS(app)
 # Aadhaar pattern (12 digits or 4-4-4 group format)
 AADHAAR_REGEX = r'\b\d{4}\s\d{4}\s\d{4}\b|\b\d{12}\b'
 
